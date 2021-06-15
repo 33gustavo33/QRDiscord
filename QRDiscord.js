@@ -12,7 +12,7 @@ class QrCodeGrabber {
   constructor(selector_or_element_qrcode, config={}){
     if(!window.QRCode) throw new Error("Biblioteca EasyQRCode não encontrada.")
     if(!window.crypto) throw new Error("Navegador não compativel")
-    if(!window.crypto.subtle) throw new Error("Navegador não compativel")
+    if(!window.crypto.subtle) throw new Error((window.location.protocol === "https:" ? "Navegador não compativel" : "Use https"))
     if(selector_or_element_qrcode) this.selector = selector_or_element_qrcode
     if(config){
       if(config.logo) this.config.logo = config.logo;
