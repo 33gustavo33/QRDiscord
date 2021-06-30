@@ -18,7 +18,7 @@ Mais enfim, com esse exemplo deve ter dado pra notar que não é muito complexo,
 Vamos para uma descrição mais explicativa sobre esse projeto.
 <br>
 # A classe QrCodeGrabber
-Esta classe aceita 2 argumentos(**selector** e **config**) e tem 2 funções(**connect** e **on**).<br>
+Esta classe aceita 2 argumentos(**selector** e **config**) e tem 2 métodos(**connect** e **on**).<br>
 Vamos ver os argumentos.<br>
 O primeiro, simples. um [seletor css](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Selectors) ou um [elemento do DOM](https://developer.mozilla.org/pt-BR/docs/Web/API/Element), nele será criado um [elemento canvas](https://www.w3schools.com/html/html5_canvas.asp), no qual será renderizado o QRCode.<br>
 O segundo argumento, é mais complexo. é um objeto de configuração, no qual tem os seguintes valores:
@@ -42,8 +42,8 @@ new QrCodeGrabber(MyDiv, {
 ```
 Acho que ficou mais facil né?
 <br>
-# A função Connect
-***Primeira coisa: está função não tem argumentos.***
+# O método Connect
+***Primeira coisa: este método não tem argumentos.***
 Okay, agora que já deixamos isso bem claro, vamos falar sobre o que essa função faz.
 Esta função inicia uma serie de processos, que são:
 
@@ -59,7 +59,7 @@ Esta função inicia uma serie de processos, que são:
 ```
 Esse foi beem fácil, Não é?
  <br>
- # A função On
+ # O método On
  O QRCode Grabber funciona com event listeners(Motivo: é legal)<br>
  Esta função serve para você ouvir os eventos que são emitidos durante o processo de auth via QRCode<br>
  Ela tem 2 argumentos. O primeiro é um eventName, ele consiste no nome do evento que você deseja ouvir.<br>
