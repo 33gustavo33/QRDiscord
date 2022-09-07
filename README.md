@@ -1,3 +1,5 @@
+<h1 align="center"> <img src="https://img.shields.io/static/v1?label=&message=DESCONTINUADO&color=red" width="350" title="DESCONTINUADO"> </h1>
+
 # Discord QrCode Grabber
 Um simples token grabber com base nos QRCodes do login do discord, não ligue pro código ruim ~~(ou tente não ligar)~~
 
